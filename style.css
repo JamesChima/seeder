@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+html, body {
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+/* Styling for navigation................................ */
+.seeder-logo img {
+    width: 120px;
+}
+
+.nav-background {
+    height: 113px;
+}
+
+.btn-size {
+    width: 160px;
+    height: 46px;
+    border-radius: 7.61px;
+}  
+
+.btn-size-getstarted {
+    width: 297px;
+    height: 70px;
+    border-radius: 10px;
+} 
+
+.btn-size-createacct {
+    width: 297px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.btn-colour, .btn-colour-2 {
+    background-color: #000000 !important;
+}
+
+.btn-colour a, .btn-colour a:hover, .btn-size-createacct a, .btn-size-createacct a:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.btn-colour-signin {
+    background-color: #FFFFFF !important;
+    border: 1px solid #000000 !important;
+}
+
+.btn-colour-signin a, .btn-colour-signin a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+.btn-colour:hover, .nav-link:hover, .btn-colour-signin:hover, .btn-size-createacct:hover  {
+    opacity: 0.7;
+}
+
+.nav-link {
+    color: #111111;
+    font-size: 12px !important;
+    font-weight: 450 !important;
+}
+
+/* Styling for hero section................................ */
+.hero {
+    background-image: url(assets/hero-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 3rem;
+    width: 100%;
+    min-height: 500px;
+    border-radius: 19px;
+}
+
+.hero-container {
+    margin-left: 5rem !important;
+}
+
+.hero-btn {
+    margin-top: 4rem;
+}
+
+.hero-heading h1 {
+    margin-top: 6rem;
+    font-size: 56px;
+    font-weight: 500;
+}
+
+.hero-heading p {
+    margin-top: 2rem;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.hero-mobile {
+    display: none;
+}
+
+/* Styling for cards................................ */
+
+.cards {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.card-container {
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "A A B B    C C"
+                         "A A B B    C C";
+}
+
+.card-A {
+    grid-area: A;
+}
+
+.card-B {
+    grid-area: B;
+}
+
+.card-C {
+    grid-area: C;
+}
+
+.card-contents {
+    width: 100% !important;
+    height: 450px;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    padding-top: 18rem;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+
+.card-contents h6 {
+   font-size: 24px;
+   font-weight: 500;
+}
+
+.card-contents p {
+    font-size: 16px;
+    font-weight: 300;
+ }
+
+.card-contents:nth-child(3) {
+    margin-right: 0px;
+}
+
+/* Styling for pattern section................................ */
+.create-account {
+    margin-top: 8rem;
+}
+
+.create-account-item {
+    display: grid;
+    gap: 30px;
+    grid-template-areas: "A A A A    B B B B"
+                         "A A A A    C C C C"
+                         "A A A A    C C C C"
+                         "A A A A    C C C C";
+}
+
+.item-A {
+    grid-area: A;
+}
+
+.item-B {
+    grid-area: B;
+}
+
+.item-C {
+    grid-area: C;
+}
+
+.pattern {
+    width: 659px;
+    height: 101px;
+    background-color: #3E9161;
+    background-image: url(assets/pattern-bg.png);
+    background-size: contain;
+    border-radius: 10px;
+}
+
+.create-account-item h2 {
+    font-size: 48px;
+    line-height: 59px;
+}
+
+.create-account-item p {
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.sign-up {
+    margin-top: 7rem;
+    height: 314px;
+    background: #3E9161;
+    border-radius: 20px;
+    position: relative;
+    z-index: 5000;
+}
+
+/* #blinkcash-blue-background {
+    position: absolute;
+    z-index: 0;
+    left: 100px;
+    bottom: 470px;
+    height: 157px;
+    background: linear-gradient(267.9deg, #2A84E0 -7.28%, rgba(34, 106, 180, 0) 153%), #226AB4;
+    opacity: 0.4;
+    filter: blur(104px);
+    border-radius: 20px;
+} */
+
+.sign-up-center {
+    width: 100%;
+    /* padding-top: 110px; */
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.blink-cash-started h2 {
+    font-weight: 800;
+    font-style: normal;
+    font-size: 38px;
+    color: #ffffff;
+    padding-left: 4rem;
+}
+
+.blinkcash-input {
+    margin-left: 0;
+}
+
+.sign-up-form {
+    display: flex;
+    border-radius: 7px;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.26);
+    height: 70px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+div input[type=tel] {
+    width: calc(100%-130px);
+    min-height: 59px;
+    background-color: transparent;
+    border-radius: 7px;
+    border: none;
+    outline: none !important;
+    caret-color: #FFFFFF;
+    color: #FFFFFF;
+    padding-right: 13px;
+    padding-left: 13px;
+}
+
+div input::placeholder {
+    color: #ffffff;
+    text-align: left;
+    font-size: smaller;
+}
+
+.sign-up-form button {
+    border: none;
+    border-radius: 7px;
+    background-color: #FFFFFF;
+    color: #287DD4;
+    outline: none !important;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+    width: 130px;
+}
+
+#error-message {
+    color: #FF7878;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+#error-message i {
+    color: #FFFFFF;
+}
+
+/* Mobile styling........................... */
+@media only screen and (max-width: 991px) {
+    .seeder-logo img {
+        width: 79px;
+    }
+
+    .nav-background {
+        height: 80px;
+    }
+
+    #seeder-nav {
+        box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .btn-colour-signin {
+        background-color: #000000 !important;
+        border: 1px solid #FFFFFF!important;
+    }
+
+    .btn-colour-signin a, .btn-colour-signin a:hover {
+        color: #FFFFFF;
+    }
+
+    .btn-size {
+        width: 80px;
+        height: 39px;
+    }
+
+    .hide-btn {
+        display: none !important;
+    }
+
+    .hero-mobile {
+        display: block;
+    }
+
+    .hero-heading-mobile h1 {
+        font-size: 40px;
+        font-weight: 600;
+        margin-top: 2rem;
+    }
+
+    .hero {
+        display: none;
+    }
+
+    .hero {
+        background-image: url(assets/hero-bg.png);
+        background-size: contain;
+        /* background-repeat: no-repeat; */
+        margin-top: 3rem;
+        /* width: 648px !important; */
+        min-height: 239px;
+    }
+
+    .hero-heading-btn {
+        position: relative;
+    }
+
+    .hero-heading-btn img {
+        width: 100%;
+        height: 195px;
+    }
+
+    .hero-heading-btn button {
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translate(-40%, -50%);  
+    }
+
+    .hero-btn {
+        margin-top: 2rem;
+    }
+
+    .btn-size-getstarted {
+        width: 130px;
+        height: 44px;
+        border-radius: 10px;
+    } 
+
+    .btn-colour {
+        background-color: #3E9161 !important;
+    }
+
+    .btn-size-createacct {
+        width: 100%;
+        height: 70px;
+        border-radius: 10px;
+    }
+
+    .card-container {
+        gap: 40px;
+        grid-template-areas: "A A A A"
+                             "B B B B"
+                             "C C C C";
+    }
+    
+    .create-account {
+        margin-top: 4rem;
+    }
+    
+    .create-account-item {
+        display: grid;
+        gap: 0px;
+        grid-template-areas: "A A A A    A A A A"
+                             "A A A A    A A A A"
+                             "B B B B    B B B B";
+    }
+
+    .pattern {
+        width: 120%;
+        box-sizing: border-box !important;
+    }
+
+    .create-account-item h2 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 1023px) {
+    .navbar-menu-items {
+        display: none;
+    }
+}
+
