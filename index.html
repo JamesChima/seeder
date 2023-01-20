@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -53,8 +54,8 @@
         <div class="row">
             <div class="col-7 hero-container">
                 <div class="hero-heading">
-                    <h1>Develop a healthy lifestyle <br> of giving to God</h1>
-                    <p>Track your giving record and give from anywhere, anytime.</p>
+                    <h1 data-aos="zoom-in-right" data-aos-duration="1000">Develop a healthy lifestyle <br> of giving to God</h1>
+                    <p data-aos="fade-up" data-aos-duration="2500">Track your giving record and give from anywhere, anytime.</p>
                 </div>
                 <div class="hero-btn">
                     <button type="button" class="btn btn-size-getstarted btn-colour"><a href="#">Get satrted</a></button>
@@ -66,15 +67,15 @@
 
     <section class="cards container">
         <div class="card-container">
-            <div class="card-contents card-A">
+            <div class="card-contents card-A" data-aos="zoom-in" data-aos-duration="1000">
                 <h6>Develop a healthy lifestyle of giving to God</h6>
                 <p>Purus quisque ultrices hendrerit faucibus diam pellentesque. Sed pulvinar viverra </p>
             </div>
-            <div class="card-contents card-B">
+            <div class="card-contents card-B" data-aos="zoom-in" data-aos-duration="1500">
                 <h6>Develop a healthy lifestyle of giving to God</h6>
                 <p>Purus quisque ultrices hendrerit faucibus diam pellentesque. Sed pulvinar viverra </p>
             </div>
-            <div class="card-contents card-C">
+            <div class="card-contents card-C" data-aos="zoom-in" data-aos-duration="2000">
                 <h6>Develop a healthy lifestyle of giving to God</h6>
                 <p>Purus quisque ultrices hendrerit faucibus diam pellentesque. Sed pulvinar viverra </p>
             </div>
@@ -84,40 +85,58 @@
     <section class="create-account container">
         <div class="create-account-item">
             <div class="item-A">
-                <h2>Netus facilisi at <br> senectus tellus. Massa.</h2>
-                <p>Similar to how we set up accounts for our businesses, savings, kids. <br>
+                <h2 data-aos="fade-right" data-aos-duration="1000">Netus facilisi at <br> senectus tellus. Massa.</h2>
+                <p data-aos="fade-right" data-aos-duration="1000">Similar to how we set up accounts for our businesses, savings, kids. <br>
                     This provides you a designated account to give generously to the <br> Lord and helps excel in doing it.</p>
                 <div class="hero-btn">
                     <button type="button" class="btn btn-size-createacct btn-colour-2"><a href="#">Create Account</a></button>
                 </div>
             </div>
             <div class="item-B">
-                <div class="pattern"></div>
+                <div class="pattern" data-aos="fade-left" data-aos-duration="1000"></div>
             </div>
             <div class="item-C empty-div"></div>
         </div>  
     </section>
 
     <section class="container sign-up">
-        <div class="row blue-background-card mt-5 align-items-center signup-center">
-            <div class="col-md-6 col-sm blink-cash-started">
+        <div class="seeder-signup sign-up-center row">
+            <div class="seeder-started col-sm" data-aos="fade-right" data-aos-duration="1000">
                 <h2>Netus facilisi at senectus</h2>
                 <h2> tellus. Massa.</h2>
             </div>
-            <div class="col-md-6 col-sm blinkcash-input">
+            <div class="seeder-started col-sm">
                 <span id="error-message"></span>
-                <div class="mx-auto sign-up-form">
+                <div class="sign-up-form">
                     <form action="">
                         <input type="tel" id="phone" name="phone_number" placeholder="Input your mobile number" onkeypress=" return stopAlphabets(event)" onkeyup="validatePhoneNumber()" minlength="1"  maxlength="11" >
                     </form>
-                    <button id="sign_up" onclick="goToRegisterPageWithPhoneNumber()">Sign up for free</button>
+                    <button id="sign_up" onclick="goToRegisterPageWithPhoneNumber()">Sign up</button>
                 </div>
             </div> 
         </div>
     </section>
     <div class="container" id="blinkcash-blue-background"></div>
-
+    
+    <footer class="footer-container">
+        <div class="container-fluid text-center text-white">
+            <div class="d-flex justify-content-between">
+                <div class="pattern-img">
+                    <img src="assets/footer-bg.png" alt="">
+                </div>
+                <div class="footer-contents">
+                    <img src="assets/seeder-logo-wh.svg" alt="Seeder logo">
+                    <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> BUILDIT</p>
+                </div>  
+                <div class="pattern-img">
+                    <img src="assets/footer-bg.png" alt="">
+                </div>         
+            </div>
+        </div>
+    </footer>
     <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" ></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" ></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" ></script>
