@@ -211,7 +211,7 @@ body {
     z-index: 5000;
 }
 
-/* #blinkcash-blue-background {
+/* .seeder-green-background {
     position: absolute;
     z-index: 0;
     left: 100px;
@@ -361,9 +361,7 @@ div input::placeholder {
     .hero {
         background-image: url(assets/hero-bg.png);
         background-size: contain;
-        /* background-repeat: no-repeat; */
         margin-top: 3rem;
-        /* width: 648px !important; */
         min-height: 239px;
     }
 
