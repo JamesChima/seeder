@@ -72,8 +72,9 @@ body {
 /* Styling for hero section................................ */
 .hero {
     background-image: url(assets/hero-bg.png);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
     margin-top: 3rem;
     width: 100%;
     min-height: 500px;
@@ -249,16 +250,17 @@ body {
     padding-left: 8px;
     padding-right: 8px;
     margin-right: 2rem;
+    -webkit-tap-highlight-color: transparent;
 }
 
 div input[type=tel] {
     width: calc(100%-130px);
     min-height: 59px;
-    background-color: transparent;
+    background-color: transparent !important;
     border-radius: 7px;
     border: none;
     outline: none !important;
-    caret-color: #FFFFFF;
+    caret-color: #3E9161;
     color: #FFFFFF;
     padding-right: 13px;
     padding-left: 13px;
@@ -454,6 +456,7 @@ div input::placeholder {
         font-size: 28px;
         color: #ffffff;
         text-align: center;
+        margin-left: 0rem;
     }
 
     .pattern-img img {
@@ -466,4 +469,38 @@ div input::placeholder {
         display: none;
     }
 }
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+    .hero {
+        margin-top: 0rem;
+    }
+
+    .hero-container {
+        margin-left: 3rem !important;
+    }
+
+    .hero-btn {
+        margin-top: 2rem;
+    }
+    
+    .hero-heading h1 {
+        margin-top: 7rem;
+        font-size: 45px;
+        font-weight: 600;
+    }  
+
+    .card-contents {
+        padding-top: 15rem;
+    }
+
+    .pattern {
+        width: 500px;
+    }
+
+    .create-account-item h2 {
+        font-size: 35px;
+        font-weight: 600;
+    }
+}
+
 
