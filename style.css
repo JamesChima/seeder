@@ -133,7 +133,7 @@ body {
 
 .card-contents {
     width: 100% !important;
-    height: 450px;
+    min-height: 450px;
     background-color: #D9D9D9;
     border-radius: 10px;
     padding-top: 18rem;
@@ -162,23 +162,22 @@ body {
 
 .create-account-item {
     display: grid;
-    gap: 30px;
-    grid-template-areas: "A A A A    B B B B"
-                         "A A A A    C C C C"
-                         "A A A A    C C C C"
-                         "A A A A    C C C C";
+    gap: 0px;
+    grid-template-areas: "X X     Y Y"
+                         "X X     Z Z"
+                         "X X     Z Z";
 }
 
-.item-A {
-    grid-area: A;
+.item-X {
+    grid-area: X;
 }
 
-.item-B {
-    grid-area: B;
+.item-Y {
+    grid-area: Y;
 }
 
-.item-C {
-    grid-area: C;
+.item-Z {
+    grid-area: Z;
 }
 
 .pattern {
@@ -225,11 +224,7 @@ body {
 } */
 
 .sign-up-center {
-    width: 100%;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+   padding-top: 3.3rem;
 }
 
 .seeder-started h2 {
@@ -294,7 +289,7 @@ div input::placeholder {
     color: #FFFFFF;
 }
 
-/* Styling for sign up section....................................... */
+/* Styling for footer section....................................... */
 .footer-container {
     margin-top: 4rem;
     background-color: #000000;
@@ -417,9 +412,9 @@ div input::placeholder {
     .create-account-item {
         display: grid;
         gap: 0px;
-        grid-template-areas: "A A A A    A A A A"
-                             "A A A A    A A A A"
-                             "B B B B    B B B B";
+        grid-template-areas: "X X X X"
+                             "Y Y Y Y"
+                             "Z Z Z Z";
     }
 
     .pattern {
@@ -445,6 +440,7 @@ div input::placeholder {
 
     .sign-up-form {
         height: 65px;
+        width: 100%;
     }
 
     div input[type=tel] {
@@ -462,6 +458,12 @@ div input::placeholder {
     .pattern-img img {
         display: none;
     }
+}
+
+@media only screen and (max-width: 991px) {
+    .sign-up-center {
+        padding-top: 2.1rem;
+    } 
 }
 
 @media only screen and (min-width: 280px) and (max-width: 1023px) {
