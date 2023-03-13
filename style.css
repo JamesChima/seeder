@@ -121,14 +121,21 @@ body {
 
 .card-A {
     grid-area: A;
+    background-image: url(/assets/offerings.png);
+    background-size: cover;
 }
+
 
 .card-B {
     grid-area: B;
+    background-image: url(/assets/tithes.png);
+    background-size: cover;
 }
 
 .card-C {
     grid-area: C;
+    background-image: url(/assets/sow-a-seed.png);
+    background-size: cover;
 }
 
 .card-contents {
