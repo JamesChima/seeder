@@ -14,7 +14,7 @@ body {
 }
 
 /* Styling for navigation................................ */
-.seeder-logo img {
+.seedar-logo img {
     width: 120px;
 }
 
@@ -90,9 +90,9 @@ body {
 }
 
 .hero-heading h1 {
-    margin-top: 6rem;
+    margin-top: 3rem;
     font-size: 56px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .hero-heading p {
@@ -218,7 +218,7 @@ body {
     z-index: 5000;
 }
 
-/* .seeder-green-background {
+.seedar-green-background {
     position: absolute;
     z-index: 0;
     left: 100px;
@@ -228,13 +228,13 @@ body {
     opacity: 0.4;
     filter: blur(52px);
     border-radius: 20px;
-} */
-
-.sign-up-center {
-   padding-top: 3.3rem;
 }
 
-.seeder-started h2 {
+.sign-up-center {
+   padding-top: 5.4rem;
+}
+
+.seedar-started h2 {
     font-weight: 800;
     font-size: 32px;
     color: #ffffff;
@@ -318,7 +318,7 @@ div input::placeholder {
 
 /* Mobile styling........................... */
 @media only screen and (max-width: 991px) {
-    .seeder-logo img {
+    .seedar-logo img {
         width: 79px;
     }
 
@@ -326,7 +326,7 @@ div input::placeholder {
         height: 80px;
     }
 
-    #seeder-nav {
+    #seedar-nav {
         box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.05);
     }
 
@@ -454,7 +454,7 @@ div input::placeholder {
         min-height: 50px;
     }
 
-    .seeder-started h2 {
+    .seedar-started h2 {
         font-weight: 600;
         font-size: 28px;
         color: #ffffff;
