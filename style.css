@@ -121,20 +121,20 @@ body {
 
 .card-A {
     grid-area: A;
-    background-image: url(/assets/offerings.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(/assets/offerings.png);
     background-size: cover;
 }
 
 
 .card-B {
     grid-area: B;
-    background-image: url(/assets/tithes.png);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(/assets/tithes.png);
     background-size: cover;
 }
 
 .card-C {
     grid-area: C;
-    background-image: url(/assets/sow-a-seed.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(/assets/sow-a-seed.png);
     background-size: cover;
 }
 
@@ -204,6 +204,62 @@ body {
 .create-account-item p {
     font-weight: 300;
     line-height: 26px;
+}
+
+
+/* Styling for automated giving section */
+.automated-giving {
+    margin-top: 5rem;
+}
+
+.card-items {
+    display: grid;
+    gap: 30px;
+    grid-template-areas: "E  F  G";
+}
+
+.item-3 {
+    grid-area: E;
+}
+
+.item-4 {
+    grid-area: F;
+}
+
+.item-5 {
+    grid-area: G;
+}
+
+.card-content {
+    width: 384px;
+    min-height: 279px;
+    padding: 1.5rem;
+    border-radius: 10px;
+    line-height: 1.7rem;
+}
+
+.card-content p {
+    margin-top: 1rem;
+    font-weight: 300;
+}
+
+.card-content h5 {
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.card-color-3 {
+    background-color: #FFFCDE;
+    background-image: url(./assets/leaf-img2.png);
+    background-repeat: no-repeat;
+    background-position: 40px -40px;
+}
+
+.card-color-4 {
+    background-color: #DEF1FF;
+    background-image: url(./assets/leaf-img.png);
+    background-repeat: no-repeat;
+    background-position: 40px -40px;
 }
 
 /* Styling for sign up section....................................... */
@@ -464,6 +520,14 @@ div input::placeholder {
 
     .pattern-img img {
         display: none;
+    }
+
+    .card-items {
+        display: grid;
+        gap: 30px;
+        grid-template-areas: "E"  
+                             "F"  
+                             "G";
     }
 }
 
